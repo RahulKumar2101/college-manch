@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-8 text-[16px] text-gray-900 font-medium">
           <li><Link href="/" className="hover:text-gray-700 transition">Home</Link></li>
-          <li><Link href="/compare-colleges" className="hover:text-gray-700 transition">Compare Colleges</Link></li>
+          {/* <li><Link href="/compare-colleges" className="hover:text-gray-700 transition">Compare Colleges</Link></li> */}
           <li><Link href="/short-videos" className="hover:text-gray-700 transition">Short Videos</Link></li>
           <li><Link href="/long-videos" className="hover:text-gray-700 transition">Long Videos</Link></li>
           <li><Link href="/college-review" className="hover:text-gray-700 transition">College Review</Link></li>

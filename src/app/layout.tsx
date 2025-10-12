@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 
 export const metadata = {
   title: "College Manch",
@@ -16,7 +17,8 @@ export default function RootLayout({
       <body className="antialiased bg-white text-gray-900">
         <Navbar />
         {/* Add top padding to avoid overlap with fixed navbar */}
-  <main className="pt-16 px-4">{children}</main>
+        <main className="pt-16 px-4">{children}</main>
+        <Footer/>
       </body>
     </html>
   );
