@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { FiMapPin, FiPhone, FiMail, FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiSend } from 'react-icons/fi';
 
 export default function Footer() {
@@ -47,11 +48,7 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <div className="mb-6">
-              <img
-                src="https://edukyu.com/assets/img/edukyu-logo.png"
-                alt="Edukyu Logo"
-                className="h-10 w-auto"
-              />
+              <Image src="https://edukyu.com/assets/img/edukyu-logo.png" alt="Edukyu Logo" width={130} height={40} className="object-contain" />
             </div>
             <p className="text-sm leading-relaxed">
               Edukyu, your trusted partner for Online education. We are a premier aggregator platform, bringing together a diverse range of specialized online courses from renowned Indian universities.
@@ -123,7 +120,7 @@ export default function Footer() {
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-yellow-400"></span>
             </h3>
             <p className="text-base mt-6">
-              Don't miss out on our latest updates! Enter your email to subscribe.
+              Don&apos;t miss out on our latest updates! Enter your email to subscribe.
             </p>
           </div>
           <div className="flex flex-col">

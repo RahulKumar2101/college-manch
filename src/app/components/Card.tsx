@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import EnquiryModal from "./EnquiryModal";
 
 export interface CardProps {
@@ -27,12 +28,7 @@ const Card: React.FC<CardProps> = ({
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
       {/* Thumbnail Section */}
       <div className="relative">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full h-48 object-cover"
-          loading="lazy"
-        />
+        <Image src={thumbnail} alt={title} width={800} height={450} className="w-full h-48 object-cover" />
         {/* Duration Overlay */}
         <span className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white text-xs px-2 py-1 rounded">
           {duration}
