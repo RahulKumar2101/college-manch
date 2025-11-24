@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ShortVideo {
+  id        String   @id @default(cuid())
+  thumbnail String
+  embedCode String
+  createdAt DateTime @default(now())
+}
+
+model LongVideo {
+  id            Int       @id @default(autoincrement())
+  title         String
+  description   String
+  channel       String
+  baseViews     Int       @default(0)
+  postDate      DateTime
+  duration      String
+  thumbnail     String
+  embedCode     String
+  categories    String[]              // JSON array
+  youtubeLink   String
+  instagramLink String?               // optional
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
